@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Dotnav /> should render 1`] = `
+<nav
+  className="Dotnav"
+>
+  <button
+    className="Dotnav-arrow Dotnav-arrow_prev"
+    onClick={[Function]}
+    type="button"
+  />
+  <ul
+    className="Dotnav-dots"
+  >
+    <li
+      className="Dotnav-dot Dotnav-dot_active"
+      onClick={[Function]}
+    />
+    <li
+      className="Dotnav-dot"
+      onClick={[Function]}
+    />
+    <li
+      className="Dotnav-dot"
+      onClick={[Function]}
+    />
+  </ul>
+  <button
+    className="Dotnav-arrow Dotnav-arrow_next"
+    onClick={[Function]}
+    type="button"
+  />
+</nav>
+`;
