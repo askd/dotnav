@@ -28,14 +28,7 @@ npm install dotnav
 | count | true | number | 0 | Any number | The number of points |
 | withArrows | false | bool | false | `true`, `false` | Whether arrows are visible or not |
 | handleChange | true | func |  |  | Callback |
-| classes | false | shape | `{
-  root: 'Dotnav',
-  dots: 'Dotnav-dots',
-  dot: 'Dotnav-dot',
-  dotActive: 'Dotnav-dot Dotnav-dot_active',
-  arrowPrev: 'Dotnav-arrow Dotnav-arrow_prev',
-  arrowNext: 'Dotnav-arrow Dotnav-arrow_next',
-}` |  | Classnames for elements |
+| classes | false | shape | `{ root: 'Dotnav', dots: 'Dotnav-dots', dot: 'Dotnav-dot', dotActive: 'Dotnav-dot Dotnav-dot_active', arrowPrev: 'Dotnav-arrow Dotnav-arrow_prev', arrowNext: 'Dotnav-arrow Dotnav-arrow_next' }` |  | Classnames for elements |
 
 ## Idea
 
