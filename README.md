@@ -12,6 +12,24 @@ React component with dots and arrows, designed to navigate any of the sliders an
 />
 ```
 
+## Styles
+
+If you use CSS Modules you can import styles and pass them as property:
+
+```javascript
+import classes from 'dotnav/lib/Dotnav.css';
+
+<Dotnav
+  index={index}
+  count={count}
+  withArrows
+  classes={classes}
+/>
+```
+
+Or you can concat static styles from the package: `'dotnav/lib/styles.css'`
+
+
 ## [Demo](https://animakit.github.io/#/slider)
 
 ## Installation
@@ -28,7 +46,7 @@ npm install dotnav
 | count | true | number | 0 | Any number | The number of points |
 | withArrows | false | bool | false | `true`, `false` | Whether arrows are visible or not |
 | handleChange | true | func |  |  | Callback |
-| classes | false | shape | `{ root: 'Dotnav', dots: 'Dotnav-dots', dot: 'Dotnav-dot', dotActive: 'Dotnav-dot Dotnav-dot_active', arrowPrev: 'Dotnav-arrow Dotnav-arrow_prev', arrowNext: 'Dotnav-arrow Dotnav-arrow_next' }` |  | Classnames for elements |
+| classes | false | shape | `{ root: 'dotnav', dots: 'dotnav-dots', dot: 'dotnav-dot', dotActive: 'dotnav-dot Dotnav-dot_active', arrowPrev: 'dotnav-arrow Dotnav-arrow_prev', arrowNext: 'dotnav-arrow Dotnav-arrow_next' }` |  | Classnames for elements |
 
 ## Idea
 

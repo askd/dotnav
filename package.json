@@ -11,7 +11,7 @@
   "scripts": {
     "clean": "rimraf lib/*.js && rimraf lib/*.css",
     "build:js": "babel -s inline -d ./ **/*.es6",
-    "build:css": "postcss lib/Dotnav.pcss -u autoprefixer -o ./lib/Dotnav.css",
+    "build:css": "postcss lib/Dotnav.pcss -u autoprefixer -o ./lib/Dotnav.css && postcss lib/styles.pcss -u autoprefixer -o ./lib/styles.css",
     "build": "npm run clean && npm run build:js && npm run build:css",
     "prepublish": "npm run build",
     "test": "$(npm bin)/jest"

@@ -54,11 +54,11 @@ Dotnav.defaultProps = {
   index: 0,
   handleChange: () => {},
   classes: {
-    root: 'Dotnav',
-    dots: 'Dotnav-dots',
-    dot: 'Dotnav-dot',
-    dotActive: 'Dotnav-dot Dotnav-dot_active',
-    arrowPrev: 'Dotnav-arrow Dotnav-arrow_prev',
-    arrowNext: 'Dotnav-arrow Dotnav-arrow_next',
+    root: 'dotnav',
+    dots: 'dotnav-dots',
+    dot: 'dotnav-dot',
+    dotActive: 'dotnav-dot dotnav-dot_active',
+    arrowPrev: 'dotnav-arrow dotnav-arrow_prev',
+    arrowNext: 'dotnav-arrow dotnav-arrow_next',
   },
 };

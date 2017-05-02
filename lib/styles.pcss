@@ -1,16 +1,16 @@
-.root {
+.dotnav {
   position: relative;
   padding: 10px 40px;
   border-radius: 20px;
   background-color: #000;
 }
 
-.dots {
+.dotnav-dots {
   display: flex;
   justify-content: center;
 }
 
-.dot {
+.dotnav-dot {
   width: 10px;
   height: 10px;
   margin: 0 5px;
@@ -18,7 +18,7 @@
   cursor: pointer;
 }
 
-.dot::after {
+.dotnav-dot::after {
   content: '';
   display: block;
   width: 10px;
@@ -28,23 +28,22 @@
   transition: box-shadow 0.5s;
 }
 
-.dot:hover::after,
-.dot:focus::after {
+.dotnav-dot:hover::after,
+.dotnav-dot:focus::after {
   box-shadow: 0 0 0 3px color(#fff a(50%));
 }
 
-.dotActive {
-  composes: dot;
+.dotnav-dot_active {
   cursor: default;
 }
 
-.dotActive::after,
-.dotActive:hover::after,
-.dotActive:focus::after {
+.dotnav-dot_active::after,
+.dotnav-dot_active:hover::after,
+.dotnav-dot_active:focus::after {
   box-shadow: 0 0 0 3px #fff;
 }
 
-.arrow {
+.dotnav-arrow {
   position: absolute;
   top: 50%;
   width: 40px;
@@ -61,13 +60,13 @@
   transition: background-color 0.5s;
 }
 
-.arrow:focus,
-.arrow:hover {
+.dotnav-arrow:focus,
+.dotnav-arrow:hover {
   background-color: rgba(255, 255, 255, 0.25);
 }
 
-.arrow::before,
-.arrow::after {
+.dotnav-arrow::before,
+.dotnav-arrow::after {
   content: '';
   position: absolute;
   top: 19px;
@@ -78,38 +77,36 @@
   background-color: currentColor;
 }
 
-.arrow::before {
+.dotnav-arrow::before {
   transform: rotate(-45deg);
 }
 
-.arrow::after {
+.dotnav-arrow::after {
   transform: rotate(45deg);
 }
 
-.arrowPrev {
-  composes: arrow;
+.dotnav-arrow_prev {
   left: 0;
 }
 
-.arrowPrev::after {
+.dotnav-arrow_prev::after {
   margin-top: -3px;
 }
 
-.arrowPrev::before,
-.arrowPrev::after {
+.dotnav-arrow_prev::before,
+.dotnav-arrow_prev::after {
   transform-origin: 0% 50%;
 }
 
-.arrowNext {
-  composes: arrow;
+.dotnav-arrow_next {
   right: 0;
 }
 
-.arrowNext::before {
+.dotnav-arrow_next::before {
   margin-top: -3px;
 }
 
-.arrowNext::before,
-.arrowNext::after {
+.dotnav-arrow_next::before,
+.dotnav-arrow_next::after {
   transform-origin: 100% 50%;
 }
