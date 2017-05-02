@@ -1,6 +1,6 @@
 {
   "name": "dotnav",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Dots Navigation for React Components",
   "main": "index.js",
   "files": [
